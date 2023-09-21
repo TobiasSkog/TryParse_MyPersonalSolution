@@ -4,13 +4,13 @@
   {
     static void Main(string[] args)
     {
-      Exempel4("Skriv ett heltal: ");
+      int userWantThisInteger = Exempel4("Skriv ett heltal: ");
     }
 
 
     //Detta är bara ett sätt att lösa detta och hur jag gjorde!
     //Dela gärna med dig av din kod så får jag se hur du löste det!
-    public static void Exempel4(string question)
+    public static int Exempel4(string question)
     {
       while (true)
       {
@@ -19,7 +19,7 @@
         if (int.TryParse(Console.ReadLine(), out int validInteger))
         {
           Console.WriteLine($"{validInteger} är en bra siffra!");
-          break;
+          return validInteger;
         }
         else
         {
