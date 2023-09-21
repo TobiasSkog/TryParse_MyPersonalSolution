@@ -5,6 +5,7 @@
     static void Main(string[] args)
     {
       int userWantThisInteger = Exempel4("Skriv ett heltal: ");
+       Console.WriteLine($"{userWantThisInteger} är ett bra heltal!");
     }
 
 
