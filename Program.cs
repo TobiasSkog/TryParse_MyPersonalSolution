@@ -19,7 +19,6 @@
 
         if (int.TryParse(Console.ReadLine(), out int validInteger))
         {
-          Console.WriteLine($"{validInteger} är en bra siffra!");
           return validInteger;
         }
         else
